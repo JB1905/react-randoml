@@ -2,3 +2,5 @@
 
 ## 1.0.0 (Soon)
 #### New Feature
+- added `useRandoml` hook
+- added `withRandoml` HOC
