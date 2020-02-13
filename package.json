@@ -1,6 +1,6 @@
 {
   "name": "react-randoml",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0",
   "description": "RandoML implementation for React",
   "author": "Jakub Biesiada",
   "license": "MIT",
@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/JB1905/react-randoml#readme",
   "dependencies": {
-    "randoml": "^1.0.0-beta.2"
+    "randoml": "^1.0.0"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^7.1.1",
