@@ -1,7 +1,7 @@
 {
   "name": "react-randoml",
   "version": "1.0.0-beta.1",
-  "description": "randoml implementation for React",
+  "description": "RandoML implementation for React",
   "author": "Jakub Biesiada",
   "license": "MIT",
   "main": "lib/react-randoml.cjs.js",
