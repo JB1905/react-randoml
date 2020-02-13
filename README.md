@@ -17,8 +17,22 @@ $ yarn add react-randoml
 ```
 
 ## Getting Started
+#### Options
+Name | Type | Default | Description
+-|-|-|-
 
-## Example
+#### Returned Values
+Name | Type | Description
+-|-|-
+
+#### Example
+**`useRandoml` hook:**
+```js
+import React from 'react';
+
+```
+
+**`withRandoml` HOC:**
 ```js
 import React from 'react';
 
