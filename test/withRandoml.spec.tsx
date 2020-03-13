@@ -19,7 +19,8 @@ describe('withRandoml usage with functional component', () => {
   it('should render random value', () => {
     const { container } = render(<FunctionalComponentHOC />);
 
-    expect(container.firstChild).toMatchInlineSnapshot('6');
+    expect(parseInt(container.firstChild!.textContent!)).toBeGreaterThan(0);
+    expect(parseInt(container.firstChild!.textContent!)).toBeLessThan(16);
   });
 });
 
@@ -39,6 +40,7 @@ describe('withRandoml usage with class component', () => {
   it('should render random value', () => {
     const { container } = render(<ClassComponentHOC />);
 
-    expect(container.firstChild).toMatchInlineSnapshot('6');
+    expect(parseInt(container.firstChild!.textContent!)).toBeGreaterThan(0);
+    expect(parseInt(container.firstChild!.textContent!)).toBeLessThan(16);
   });
 });
