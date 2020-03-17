@@ -1,5 +1,5 @@
 import React from 'react';
-import { Options } from '../node_modules/randoml/lib/types/Options';
+import { Options } from 'randoml/lib/types';
 
 import { useRandoml } from './useRandoml';
 
