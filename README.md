@@ -1,4 +1,4 @@
-# [react-randoml](https://github.com/jb1905/react-randoml)
+# [react-randoml](https://github.com/randoml-js/react-randoml)
 
 [![NPM version](http://img.shields.io/npm/v/react-randoml.svg?style=flat-square)](https://www.npmjs.com/package/react-randoml)
 [![NPM downloads](http://img.shields.io/npm/dm/react-randoml.svg?style=flat-square)](https://www.npmjs.com/package/react-randoml)
@@ -19,10 +19,10 @@ $ yarn add react-randoml
 
 ## Getting Started
 #### Options
-[RandoML options](https://github.com/JB1905/randoml#options)
+[RandoML options](https://github.com/randoml-js/randoml#options)
 
 #### Returned Values
-[RandoML methods](https://github.com/JB1905/randoml#methods)
+[RandoML methods](https://github.com/randoml-js/randoml#methods)
 
 #### Example
 **`useRandoml` hook:**
