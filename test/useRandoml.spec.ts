@@ -15,7 +15,7 @@ describe('useRandoml', () => {
       settings: {
         min: 4,
         max: 8,
-        exclude: [5], // TODO allow number value if passing one item
+        exclude: [5],
       },
     };
 

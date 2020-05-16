@@ -8,7 +8,7 @@ interface Props {
 }
 
 describe('withRandoml usage with functional component', () => {
-  const FunctionalComponent = ({ choose }: Props) => {
+  const FunctionalComponent: React.FC<Props> = ({ choose }) => {
     const value = choose();
 
     return <>{value}</>;
