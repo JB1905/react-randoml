@@ -21,7 +21,7 @@ describe('useRandoml', () => {
 
     const { result } = renderHook(() => useRandoml(options));
 
-    expect(result.current.choose()).toBeGreaterThan(0);
-    expect(result.current.choose()).toBeLessThan(16);
+    expect(result.current.choose()).toBeGreaterThan(3);
+    expect(result.current.choose()).toBeLessThan(9);
   });
 });
