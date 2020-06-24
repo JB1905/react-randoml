@@ -6,8 +6,10 @@ describe('useRandoml', () => {
   it('should return number for default options', () => {
     const { result } = renderHook(() => useRandoml());
 
-    expect(result.current.choose()).toBeGreaterThan(0);
-    expect(result.current.choose()).toBeLessThan(16);
+    const choice = result.current.choose();
+
+    expect(choice).toBeGreaterThanOrEqual(1);
+    expect(choice).toBeLessThanOrEqual(15);
   });
 
   it('should return number for custom options', () => {
@@ -21,7 +23,9 @@ describe('useRandoml', () => {
 
     const { result } = renderHook(() => useRandoml(options));
 
-    expect(result.current.choose()).toBeGreaterThan(3);
-    expect(result.current.choose()).toBeLessThan(9);
+    const choice = result.current.choose();
+
+    expect(choice).toBeGreaterThanOrEqual(4);
+    expect(choice).toBeLessThanOrEqual(8);
   });
 });
