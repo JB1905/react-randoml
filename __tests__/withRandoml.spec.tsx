@@ -14,7 +14,7 @@ describe('withRandoml usage with functional component', () => {
     return <>{choice}</>;
   };
 
-  const FunctionalComponentHOC = withRandoml(FunctionalComponent);
+  const FunctionalComponentHOC = withRandoml()(FunctionalComponent);
 
   it('should render random value', () => {
     const { container } = render(<FunctionalComponentHOC />);
@@ -39,7 +39,7 @@ describe('withRandoml usage with class component', () => {
     }
   }
 
-  const ClassComponentHOC = withRandoml(ClassComponent);
+  const ClassComponentHOC = withRandoml()(ClassComponent);
 
   it('should render random value', () => {
     const { container } = render(<ClassComponentHOC />);
