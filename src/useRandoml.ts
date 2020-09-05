@@ -6,5 +6,5 @@ export const useRandoml = (options = {} as Options) => {
 
   const choose = () => rand.choose();
 
-  return { choose, predict };
+  return { choose };
 };
