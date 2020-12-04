@@ -3,8 +3,8 @@ import { Options } from 'randoml/lib/types';
 
 import { useRandoml } from './useRandoml';
 
-export function withRandoml<T>(options?: Options) {
-  return (WrappedComponent: React.ComponentType<T>) => (props: T) => (
+export function withRandoml(options?: Options) {
+  return <T,>(WrappedComponent: React.ComponentType<T>) => (props: T) => (
     <WrappedComponent {...props} {...useRandoml(options)} />
   );
 }

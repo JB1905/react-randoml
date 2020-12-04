@@ -7,48 +7,44 @@ interface Props {
   choose: () => number | undefined;
 }
 
-describe('withRandoml usage with functional component', () => {
-  const FunctionalComponent: React.FC<Props> = ({ choose }) => {
-    const choice = choose();
+const renderResult = ({ choose }: Props) => {
+  const choice = choose();
 
-    return <>{choice}</>;
+  return <p data-testid="choice">{choice}</p>;
+};
+
+describe('withRandoml usage with functional component', () => {
+  const FunctionalComponent: React.FC<Props> = (props) => {
+    return renderResult(props);
   };
 
   const FunctionalComponentHOC = withRandoml()(FunctionalComponent);
 
   it('should render random value', () => {
-    const { container } = render(<FunctionalComponentHOC />);
+    const { getByTestId } = render(<FunctionalComponentHOC />);
 
-    expect(parseInt(container.firstChild!.textContent!)).toBeGreaterThanOrEqual(
-      1
-    );
-    expect(parseInt(container.firstChild!.textContent!)).toBeLessThanOrEqual(
-      15
-    );
+    const result = getByTestId('choice');
+
+    expect(result).toBeGreaterThanOrEqual(1);
+    expect(result).toBeLessThanOrEqual(15);
   });
 });
 
 describe('withRandoml usage with class component', () => {
   class ClassComponent extends Component<Props> {
     render() {
-      const { choose } = this.props;
-
-      const choice = choose();
-
-      return <>{choice}</>;
+      return renderResult(this.props);
     }
   }
 
   const ClassComponentHOC = withRandoml()(ClassComponent);
 
   it('should render random value', () => {
-    const { container } = render(<ClassComponentHOC />);
+    const { getByTestId } = render(<ClassComponentHOC />);
 
-    expect(parseInt(container.firstChild!.textContent!)).toBeGreaterThanOrEqual(
-      1
-    );
-    expect(parseInt(container.firstChild!.textContent!)).toBeLessThanOrEqual(
-      15
-    );
+    const result = getByTestId('choice');
+
+    expect(result).toBeGreaterThanOrEqual(1);
+    expect(result).toBeLessThanOrEqual(15);
   });
 });
