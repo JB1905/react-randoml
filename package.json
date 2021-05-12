@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/randoml-js/react-randoml#readme",
   "dependencies": {
-    "randoml": "^1.0.0"
+    "randoml": "^2.0.0-beta.1"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^9.0.0",
