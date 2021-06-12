@@ -1,10 +1,8 @@
-import RandoML from 'randoml';
-import { Options } from 'randoml/lib/types';
+import type { Options } from 'randoml';
 
-export const useRandoml = (options = {} as Options) => {
-  const rand = new RandoML(options);
+// TODO rename file
+import { randoml } from './randoml';
 
-  const choose = () => rand.choose();
-
-  return { choose };
+export const useRandoml = (options?: Options) => {
+  return randoml(options);
 };
