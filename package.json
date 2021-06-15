@@ -25,9 +25,13 @@
   },
   "keywords": [
     "react",
+    "hooks",
+    "machine-learning",
+    "library",
     "random",
     "number",
-    "exclude"
+    "exclude",
+    "number-priority"
   ],
   "bugs": {
     "url": "https://github.com/randoml-js/react-randoml/issues"
