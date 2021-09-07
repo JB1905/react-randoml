@@ -13,7 +13,7 @@ const renderResult = ({ choose }: Props) => {
   return <p data-testid="choice">{choice}</p>;
 };
 
-describe('withRandoml usage with functional component', () => {
+describe('withRandoml usage with a functional component', () => {
   const FunctionalComponent: React.FC<Props> = (props) => {
     return renderResult(props);
   };
@@ -30,7 +30,7 @@ describe('withRandoml usage with functional component', () => {
   });
 });
 
-describe('withRandoml usage with class component', () => {
+describe('withRandoml usage with a class component', () => {
   class ClassComponent extends Component<Props> {
     render() {
       return renderResult(this.props);
@@ -39,7 +39,7 @@ describe('withRandoml usage with class component', () => {
 
   const ClassComponentHOC = withRandoml()(ClassComponent);
 
-  it('should render random value', () => {
+  it('should render a random value', () => {
     const { getByTestId } = render(<ClassComponentHOC />);
 
     const result = getByTestId('choice');

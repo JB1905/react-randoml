@@ -2,7 +2,7 @@
 
 ## 1.0.0 (2020-02-13)
 
-#### New Feature
+### New Feature
 
 - added `useRandoml` hook
 - added `withRandoml` HOC

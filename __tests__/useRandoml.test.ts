@@ -3,7 +3,7 @@ import { renderHook } from '@testing-library/react-hooks';
 import { useRandoml } from '../src';
 
 describe('useRandoml', () => {
-  it('should return number for default options', () => {
+  it('should return a number for the default options', () => {
     const { result } = renderHook(() => useRandoml());
 
     const choice = result.current.choose();
@@ -12,7 +12,7 @@ describe('useRandoml', () => {
     expect(choice).toBeLessThanOrEqual(15);
   });
 
-  it('should return number for custom options', () => {
+  it('should return a number for custom options', () => {
     const options = {
       settings: {
         min: 4,

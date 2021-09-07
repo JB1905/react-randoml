@@ -1,11 +1,10 @@
 src
 __tests__
 coverage
-
+.husky
 tsconfig.json
 .travis.yml
 .prettierrc
-
 .eslintrc.js
 global.d.ts
 rollup.config.js
