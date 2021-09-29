@@ -1,7 +1,11 @@
+import RandoML from 'randoml';
 import type { Options } from 'randoml';
 
-import { connect } from './connect';
+export const useRandoml = (options = {} as Options) => {
+  const rand = new RandoML(options);
 
-export const useRandoml = (options?: Options) => {
-  return connect(options);
+  const choose = rand.choose;
+  const predict = rand.predict;
+
+  return { choose, predict };
 };

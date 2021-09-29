@@ -3,8 +3,10 @@ import { render } from '@testing-library/react';
 
 import { withRandoml } from '../src';
 
+// TODO infer
 interface Props {
   choose: () => number | undefined;
+  // TODO predict
 }
 
 const renderResult = ({ choose }: Props) => {
