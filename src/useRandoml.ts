@@ -1,8 +1,7 @@
 import type { Options } from 'randoml';
 
-// TODO rename file
-import { config } from './config';
+import { connect } from './connect';
 
 export const useRandoml = (options?: Options) => {
-  return config(options);
+  return connect(options);
 };
