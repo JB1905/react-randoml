@@ -6,7 +6,6 @@ tsconfig.json
 .travis.yml
 .prettierrc
 .eslintrc.js
-global.d.ts
 rollup.config.js
 yarn-error.log
 .rpt2_cache
